@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue,
-          title: Text("LabN1", style: TextStyle(color: Colors.white,
+          title: Text("Lab N1", style: TextStyle(color: Colors.white,
               backgroundColor: Colors.blue),),
         ),
         body: Center(
@@ -59,7 +59,7 @@ class MyScreen extends StatefulWidget {
 
 class _MyScreenState extends State<MyScreen> {
   bool _btnPressed = false;
-  Icon icon = Icon(Icons.play_circle, color: Colors.blue, size: 60);
+  Icon icon = Icon(Icons.play_circle_outline, color: Colors.blue, size: 60);
   int time = 0;
   Timer? timer;
 
@@ -78,7 +78,7 @@ class _MyScreenState extends State<MyScreen> {
               setState(() {
                 icon = _btnPressed ?
                 Icon(Icons.stop_circle, color: Colors.red, size: 60):
-                Icon(Icons.play_circle, color: Colors.blue, size: 60);
+                Icon(Icons.play_circle_outline, color: Colors.blue, size: 60);
                 if(_btnPressed){
                   startTimer();
                 }else{
